@@ -1,4 +1,6 @@
-﻿namespace Heads_or_Tails
+﻿using System;
+
+namespace Heads_or_Tails
 {
     partial class HeadsOrTails
     {
@@ -20,6 +22,7 @@
             base.Dispose(disposing);
         }
 
+       
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -36,6 +39,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.coinHeads)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coinTails)).BeginInit();
             this.SuspendLayout();
+
             // 
             // showHeadsButton
             // 
@@ -46,6 +50,8 @@
             this.showHeadsButton.Text = "Show Heads";
             this.showHeadsButton.UseVisualStyleBackColor = true;
             this.showHeadsButton.Click += new System.EventHandler(this.showHeadsButton_Click);
+            this.showHeadsButton.MouseEnter += new System.EventHandler(this.showHeadsButton_MouseEnter);
+            this.showHeadsButton.MouseLeave += new System.EventHandler(this.showHeadsButton_MouseLeave);
             // 
             // showTailsButton
             // 
@@ -56,6 +62,8 @@
             this.showTailsButton.Text = "Show Tails";
             this.showTailsButton.UseVisualStyleBackColor = true;
             this.showTailsButton.Click += new System.EventHandler(this.showTailsButton_Click);
+            this.showTailsButton.MouseEnter += new System.EventHandler(this.showTailsButton_MouseEnter);
+            this.showTailsButton.MouseLeave += new System.EventHandler(this.showTailsButton_MouseLeave);
             // 
             // exitButton
             // 

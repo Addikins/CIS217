@@ -17,6 +17,25 @@ namespace Heads_or_Tails
             InitializeComponent();
         }
 
+        private void showHeadsButton_MouseEnter(object sender, EventArgs e)
+        {
+            coinHeads.Image = Properties.Resources.Heads1;
+        }
+
+        private void showHeadsButton_MouseLeave(object sender, EventArgs e)
+        {
+            coinHeads.Image = Properties.Resources.Heads2;
+        }
+
+        private void showTailsButton_MouseEnter(object sender, EventArgs e)
+        {
+            coinTails.Image = Properties.Resources.Tails1;
+        }
+
+        private void showTailsButton_MouseLeave(object sender, EventArgs e)
+        {
+            coinTails.Image = Properties.Resources.Tails2;
+        }
 
         private void showHeadsButton_Click(object sender, EventArgs e)
         {
