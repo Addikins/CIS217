@@ -17,3 +17,12 @@ C:\Users\Tony\Documents\Books\C#\4th Edition\Student Sample Programs\Chap03\Text
 C:\Users\Tony\Documents\Books\C#\4th Edition\Student Sample Programs\Chap03\TextBox Demo\TextBox Demo\obj\x86\Debug\TextBox_Demo.Form1.resources
 C:\Users\Tony\Documents\Books\C#\4th Edition\Student Sample Programs\Chap03\TextBox Demo\TextBox Demo\obj\x86\Debug\TextBox_Demo.Properties.Resources.resources
 C:\Users\Tony\Documents\Books\C#\4th Edition\Student Sample Programs\Chap03\TextBox Demo\TextBox Demo\obj\x86\Debug\TextBox Demo.csproj.GenerateResource.Cache
+C:\Classes\CIS217\Source_Code\Student Sample Programs\Chap03\TextBox Demo\TextBox Demo\bin\Debug\TextBox Demo.exe
+C:\Classes\CIS217\Source_Code\Student Sample Programs\Chap03\TextBox Demo\TextBox Demo\bin\Debug\TextBox Demo.pdb
+C:\Classes\CIS217\Source_Code\Student Sample Programs\Chap03\TextBox Demo\TextBox Demo\obj\x86\Debug\TextBox Demo.csprojAssemblyReference.cache
+C:\Classes\CIS217\Source_Code\Student Sample Programs\Chap03\TextBox Demo\TextBox Demo\obj\x86\Debug\TextBox_Demo.Form1.resources
+C:\Classes\CIS217\Source_Code\Student Sample Programs\Chap03\TextBox Demo\TextBox Demo\obj\x86\Debug\TextBox_Demo.Properties.Resources.resources
+C:\Classes\CIS217\Source_Code\Student Sample Programs\Chap03\TextBox Demo\TextBox Demo\obj\x86\Debug\TextBox Demo.csproj.GenerateResource.cache
+C:\Classes\CIS217\Source_Code\Student Sample Programs\Chap03\TextBox Demo\TextBox Demo\obj\x86\Debug\TextBox Demo.csproj.CoreCompileInputs.cache
+C:\Classes\CIS217\Source_Code\Student Sample Programs\Chap03\TextBox Demo\TextBox Demo\obj\x86\Debug\TextBox Demo.exe
+C:\Classes\CIS217\Source_Code\Student Sample Programs\Chap03\TextBox Demo\TextBox Demo\obj\x86\Debug\TextBox Demo.pdb
