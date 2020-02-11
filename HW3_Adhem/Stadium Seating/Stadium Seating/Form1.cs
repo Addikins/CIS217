@@ -12,6 +12,15 @@ namespace Stadium_Seating
 {
     public partial class mainForm : Form
     {
+        int _classATicketCost = 15;
+        int _classBTicketCost = 12;
+        int _classCTicketCost = 9;
+
+        decimal _classARevenue = 0;
+        decimal _classBRevenue = 0;
+        decimal _classCRevenue = 0;
+        decimal _totalRevenue = 0;
+
         public mainForm()
         {
             InitializeComponent();
@@ -50,6 +59,29 @@ namespace Stadium_Seating
         private void ticketsInput0_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+            _classARevenue = ticketsInput0.Value * _classATicketCost;
+            _classBRevenue = ticketsInput1.Value * _classBTicketCost;
+            _classCRevenue = ticketsInput2.Value * _classCTicketCost;
+            _totalRevenue = _classARevenue + _classBRevenue + _classCRevenue;
+
+            revenueDisplay0.Text = "$" + (_classARevenue).ToString() + ".00";
+            revenueDisplay1.Text = "$" + (_classBRevenue).ToString() + ".00";
+            revenueDisplay2.Text = "$" + (_classCRevenue).ToString() + ".00";
+            revenueDisplay3.Text = "$" + (_totalRevenue).ToString() + ".00";
+
+            if (_totalRevenue > 0)
+            {
+            revenueDisplay3.ForeColor = Color.Green;
+            }
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

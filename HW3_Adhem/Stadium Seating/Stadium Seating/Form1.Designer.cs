@@ -72,29 +72,29 @@
             // inputLabel2
             // 
             this.inputLabel2.AutoSize = true;
-            this.inputLabel2.Location = new System.Drawing.Point(73, 226);
+            this.inputLabel2.Location = new System.Drawing.Point(40, 182);
             this.inputLabel2.Name = "inputLabel2";
-            this.inputLabel2.Size = new System.Drawing.Size(59, 17);
+            this.inputLabel2.Size = new System.Drawing.Size(140, 17);
             this.inputLabel2.TabIndex = 5;
-            this.inputLabel2.Text = "Class C:";
+            this.inputLabel2.Text = "Class C Tickets Sold:";
             // 
             // inputLable1
             // 
             this.inputLable1.AutoSize = true;
-            this.inputLable1.Location = new System.Drawing.Point(73, 181);
+            this.inputLable1.Location = new System.Drawing.Point(40, 137);
             this.inputLable1.Name = "inputLable1";
-            this.inputLable1.Size = new System.Drawing.Size(59, 17);
+            this.inputLable1.Size = new System.Drawing.Size(140, 17);
             this.inputLable1.TabIndex = 4;
-            this.inputLable1.Text = "Class B:";
+            this.inputLable1.Text = "Class B Tickets Sold:";
             // 
             // inputLabel0
             // 
             this.inputLabel0.AutoSize = true;
-            this.inputLabel0.Location = new System.Drawing.Point(73, 135);
+            this.inputLabel0.Location = new System.Drawing.Point(40, 91);
             this.inputLabel0.Name = "inputLabel0";
-            this.inputLabel0.Size = new System.Drawing.Size(59, 17);
+            this.inputLabel0.Size = new System.Drawing.Size(140, 17);
             this.inputLabel0.TabIndex = 3;
-            this.inputLabel0.Text = "Class A:";
+            this.inputLabel0.Text = "Class A Tickets Sold:";
             // 
             // revenueBox
             // 
@@ -121,6 +121,7 @@
             this.revenueDisplay3.Name = "revenueDisplay3";
             this.revenueDisplay3.Size = new System.Drawing.Size(133, 28);
             this.revenueDisplay3.TabIndex = 13;
+            this.revenueDisplay3.Text = "$0.00";
             this.revenueDisplay3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // revenueDisplay2
@@ -131,6 +132,7 @@
             this.revenueDisplay2.Name = "revenueDisplay2";
             this.revenueDisplay2.Size = new System.Drawing.Size(133, 28);
             this.revenueDisplay2.TabIndex = 12;
+            this.revenueDisplay2.Text = "$0.00";
             this.revenueDisplay2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // revenueDisplay1
@@ -141,6 +143,7 @@
             this.revenueDisplay1.Name = "revenueDisplay1";
             this.revenueDisplay1.Size = new System.Drawing.Size(133, 28);
             this.revenueDisplay1.TabIndex = 11;
+            this.revenueDisplay1.Text = "$0.00";
             this.revenueDisplay1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // revenueDisplay0
@@ -151,6 +154,7 @@
             this.revenueDisplay0.Name = "revenueDisplay0";
             this.revenueDisplay0.Size = new System.Drawing.Size(133, 28);
             this.revenueDisplay0.TabIndex = 10;
+            this.revenueDisplay0.Text = "$0.00";
             this.revenueDisplay0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // revenueLable3
@@ -166,31 +170,31 @@
             // revenueLable2
             // 
             this.revenueLable2.AutoSize = true;
-            this.revenueLable2.Location = new System.Drawing.Point(62, 178);
+            this.revenueLable2.Location = new System.Drawing.Point(6, 178);
             this.revenueLable2.Name = "revenueLable2";
-            this.revenueLable2.Size = new System.Drawing.Size(59, 17);
+            this.revenueLable2.Size = new System.Drawing.Size(120, 17);
             this.revenueLable2.TabIndex = 8;
-            this.revenueLable2.Text = "Class C:";
+            this.revenueLable2.Text = "Class C Revenue:";
             this.revenueLable2.Click += new System.EventHandler(this.label1_Click);
             // 
             // revenueLable1
             // 
             this.revenueLable1.AutoSize = true;
-            this.revenueLable1.Location = new System.Drawing.Point(62, 132);
+            this.revenueLable1.Location = new System.Drawing.Point(6, 132);
             this.revenueLable1.Name = "revenueLable1";
-            this.revenueLable1.Size = new System.Drawing.Size(59, 17);
+            this.revenueLable1.Size = new System.Drawing.Size(120, 17);
             this.revenueLable1.TabIndex = 7;
-            this.revenueLable1.Text = "Class B:";
+            this.revenueLable1.Text = "Class B Revenue:";
             this.revenueLable1.Click += new System.EventHandler(this.label2_Click);
             // 
             // revenueLable0
             // 
             this.revenueLable0.AutoSize = true;
-            this.revenueLable0.Location = new System.Drawing.Point(62, 89);
+            this.revenueLable0.Location = new System.Drawing.Point(6, 89);
             this.revenueLable0.Name = "revenueLable0";
-            this.revenueLable0.Size = new System.Drawing.Size(59, 17);
+            this.revenueLable0.Size = new System.Drawing.Size(120, 17);
             this.revenueLable0.TabIndex = 6;
-            this.revenueLable0.Text = "Class A:";
+            this.revenueLable0.Text = "Class A Revenue:";
             this.revenueLable0.Click += new System.EventHandler(this.label3_Click);
             // 
             // calculateButton
@@ -201,6 +205,7 @@
             this.calculateButton.TabIndex = 2;
             this.calculateButton.Text = "Calculate Revenue";
             this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // clearButton
             // 
@@ -219,29 +224,30 @@
             this.exitButton.TabIndex = 4;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // ticketsInput0
             // 
-            this.ticketsInput0.Location = new System.Drawing.Point(149, 133);
+            this.ticketsInput0.Location = new System.Drawing.Point(186, 89);
             this.ticketsInput0.Name = "ticketsInput0";
-            this.ticketsInput0.Size = new System.Drawing.Size(103, 22);
+            this.ticketsInput0.Size = new System.Drawing.Size(149, 22);
             this.ticketsInput0.TabIndex = 6;
             this.ticketsInput0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.ticketsInput0.ValueChanged += new System.EventHandler(this.ticketsInput0_ValueChanged);
             // 
             // ticketsInput1
             // 
-            this.ticketsInput1.Location = new System.Drawing.Point(149, 179);
+            this.ticketsInput1.Location = new System.Drawing.Point(186, 135);
             this.ticketsInput1.Name = "ticketsInput1";
-            this.ticketsInput1.Size = new System.Drawing.Size(103, 22);
+            this.ticketsInput1.Size = new System.Drawing.Size(149, 22);
             this.ticketsInput1.TabIndex = 7;
             this.ticketsInput1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ticketsInput2
             // 
-            this.ticketsInput2.Location = new System.Drawing.Point(149, 224);
+            this.ticketsInput2.Location = new System.Drawing.Point(186, 180);
             this.ticketsInput2.Name = "ticketsInput2";
-            this.ticketsInput2.Size = new System.Drawing.Size(103, 22);
+            this.ticketsInput2.Size = new System.Drawing.Size(149, 22);
             this.ticketsInput2.TabIndex = 8;
             this.ticketsInput2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
