@@ -29,36 +29,36 @@
         private void InitializeComponent()
         {
             this.ticketsBox = new System.Windows.Forms.GroupBox();
-            this.inputLabel2 = new System.Windows.Forms.Label();
-            this.inputLable1 = new System.Windows.Forms.Label();
-            this.inputLabel0 = new System.Windows.Forms.Label();
             this.revenueBox = new System.Windows.Forms.GroupBox();
-            this.revenueDisplay3 = new System.Windows.Forms.Label();
-            this.revenueDisplay2 = new System.Windows.Forms.Label();
-            this.revenueDisplay1 = new System.Windows.Forms.Label();
-            this.revenueDisplay0 = new System.Windows.Forms.Label();
-            this.revenueLable3 = new System.Windows.Forms.Label();
+            this.inputLabel0 = new System.Windows.Forms.Label();
+            this.inputLable1 = new System.Windows.Forms.Label();
+            this.inputLabel2 = new System.Windows.Forms.Label();
             this.revenueLable2 = new System.Windows.Forms.Label();
             this.revenueLable1 = new System.Windows.Forms.Label();
             this.revenueLable0 = new System.Windows.Forms.Label();
+            this.revenueLable3 = new System.Windows.Forms.Label();
+            this.revenueDisplay0 = new System.Windows.Forms.Label();
+            this.revenueDisplay1 = new System.Windows.Forms.Label();
+            this.revenueDisplay2 = new System.Windows.Forms.Label();
+            this.revenueDisplay3 = new System.Windows.Forms.Label();
             this.calculateButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
-            this.ticketsInput0 = new System.Windows.Forms.NumericUpDown();
-            this.ticketsInput1 = new System.Windows.Forms.NumericUpDown();
-            this.ticketsInput2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.ticketsBox.SuspendLayout();
             this.revenueBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ticketsInput0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ticketsInput1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ticketsInput2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.SuspendLayout();
             // 
             // ticketsBox
             // 
-            this.ticketsBox.Controls.Add(this.ticketsInput2);
-            this.ticketsBox.Controls.Add(this.ticketsInput1);
-            this.ticketsBox.Controls.Add(this.ticketsInput0);
+            this.ticketsBox.Controls.Add(this.numericUpDown3);
+            this.ticketsBox.Controls.Add(this.numericUpDown2);
+            this.ticketsBox.Controls.Add(this.numericUpDown1);
             this.ticketsBox.Controls.Add(this.inputLabel2);
             this.ticketsBox.Controls.Add(this.inputLable1);
             this.ticketsBox.Controls.Add(this.inputLabel0);
@@ -68,33 +68,6 @@
             this.ticketsBox.TabIndex = 0;
             this.ticketsBox.TabStop = false;
             this.ticketsBox.Text = "Tickets Sold";
-            // 
-            // inputLabel2
-            // 
-            this.inputLabel2.AutoSize = true;
-            this.inputLabel2.Location = new System.Drawing.Point(73, 226);
-            this.inputLabel2.Name = "inputLabel2";
-            this.inputLabel2.Size = new System.Drawing.Size(59, 17);
-            this.inputLabel2.TabIndex = 5;
-            this.inputLabel2.Text = "Class C:";
-            // 
-            // inputLable1
-            // 
-            this.inputLable1.AutoSize = true;
-            this.inputLable1.Location = new System.Drawing.Point(73, 181);
-            this.inputLable1.Name = "inputLable1";
-            this.inputLable1.Size = new System.Drawing.Size(59, 17);
-            this.inputLable1.TabIndex = 4;
-            this.inputLable1.Text = "Class B:";
-            // 
-            // inputLabel0
-            // 
-            this.inputLabel0.AutoSize = true;
-            this.inputLabel0.Location = new System.Drawing.Point(73, 135);
-            this.inputLabel0.Name = "inputLabel0";
-            this.inputLabel0.Size = new System.Drawing.Size(59, 17);
-            this.inputLabel0.TabIndex = 3;
-            this.inputLabel0.Text = "Class A:";
             // 
             // revenueBox
             // 
@@ -113,55 +86,32 @@
             this.revenueBox.TabStop = false;
             this.revenueBox.Text = "Revenue Generated";
             // 
-            // revenueDisplay3
+            // inputLabel0
             // 
-            this.revenueDisplay3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.revenueDisplay3.Location = new System.Drawing.Point(128, 229);
-            this.revenueDisplay3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.revenueDisplay3.Name = "revenueDisplay3";
-            this.revenueDisplay3.Size = new System.Drawing.Size(133, 28);
-            this.revenueDisplay3.TabIndex = 13;
-            this.revenueDisplay3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.inputLabel0.AutoSize = true;
+            this.inputLabel0.Location = new System.Drawing.Point(73, 135);
+            this.inputLabel0.Name = "inputLabel0";
+            this.inputLabel0.Size = new System.Drawing.Size(59, 17);
+            this.inputLabel0.TabIndex = 3;
+            this.inputLabel0.Text = "Class A:";
             // 
-            // revenueDisplay2
+            // inputLable1
             // 
-            this.revenueDisplay2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.revenueDisplay2.Location = new System.Drawing.Point(128, 172);
-            this.revenueDisplay2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.revenueDisplay2.Name = "revenueDisplay2";
-            this.revenueDisplay2.Size = new System.Drawing.Size(133, 28);
-            this.revenueDisplay2.TabIndex = 12;
-            this.revenueDisplay2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.inputLable1.AutoSize = true;
+            this.inputLable1.Location = new System.Drawing.Point(73, 181);
+            this.inputLable1.Name = "inputLable1";
+            this.inputLable1.Size = new System.Drawing.Size(59, 17);
+            this.inputLable1.TabIndex = 4;
+            this.inputLable1.Text = "Class B:";
             // 
-            // revenueDisplay1
+            // inputLabel2
             // 
-            this.revenueDisplay1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.revenueDisplay1.Location = new System.Drawing.Point(128, 126);
-            this.revenueDisplay1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.revenueDisplay1.Name = "revenueDisplay1";
-            this.revenueDisplay1.Size = new System.Drawing.Size(133, 28);
-            this.revenueDisplay1.TabIndex = 11;
-            this.revenueDisplay1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // revenueDisplay0
-            // 
-            this.revenueDisplay0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.revenueDisplay0.Location = new System.Drawing.Point(128, 83);
-            this.revenueDisplay0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.revenueDisplay0.Name = "revenueDisplay0";
-            this.revenueDisplay0.Size = new System.Drawing.Size(133, 28);
-            this.revenueDisplay0.TabIndex = 10;
-            this.revenueDisplay0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // revenueLable3
-            // 
-            this.revenueLable3.AutoSize = true;
-            this.revenueLable3.Location = new System.Drawing.Point(77, 235);
-            this.revenueLable3.Name = "revenueLable3";
-            this.revenueLable3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.revenueLable3.Size = new System.Drawing.Size(44, 17);
-            this.revenueLable3.TabIndex = 9;
-            this.revenueLable3.Text = "Total:";
+            this.inputLabel2.AutoSize = true;
+            this.inputLabel2.Location = new System.Drawing.Point(73, 226);
+            this.inputLabel2.Name = "inputLabel2";
+            this.inputLabel2.Size = new System.Drawing.Size(59, 17);
+            this.inputLabel2.TabIndex = 5;
+            this.inputLabel2.Text = "Class C:";
             // 
             // revenueLable2
             // 
@@ -193,6 +143,56 @@
             this.revenueLable0.Text = "Class A:";
             this.revenueLable0.Click += new System.EventHandler(this.label3_Click);
             // 
+            // revenueLable3
+            // 
+            this.revenueLable3.AutoSize = true;
+            this.revenueLable3.Location = new System.Drawing.Point(77, 235);
+            this.revenueLable3.Name = "revenueLable3";
+            this.revenueLable3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.revenueLable3.Size = new System.Drawing.Size(44, 17);
+            this.revenueLable3.TabIndex = 9;
+            this.revenueLable3.Text = "Total:";
+            // 
+            // revenueDisplay0
+            // 
+            this.revenueDisplay0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.revenueDisplay0.Location = new System.Drawing.Point(128, 83);
+            this.revenueDisplay0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.revenueDisplay0.Name = "revenueDisplay0";
+            this.revenueDisplay0.Size = new System.Drawing.Size(133, 28);
+            this.revenueDisplay0.TabIndex = 10;
+            this.revenueDisplay0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // revenueDisplay1
+            // 
+            this.revenueDisplay1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.revenueDisplay1.Location = new System.Drawing.Point(128, 126);
+            this.revenueDisplay1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.revenueDisplay1.Name = "revenueDisplay1";
+            this.revenueDisplay1.Size = new System.Drawing.Size(133, 28);
+            this.revenueDisplay1.TabIndex = 11;
+            this.revenueDisplay1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // revenueDisplay2
+            // 
+            this.revenueDisplay2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.revenueDisplay2.Location = new System.Drawing.Point(128, 172);
+            this.revenueDisplay2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.revenueDisplay2.Name = "revenueDisplay2";
+            this.revenueDisplay2.Size = new System.Drawing.Size(133, 28);
+            this.revenueDisplay2.TabIndex = 12;
+            this.revenueDisplay2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // revenueDisplay3
+            // 
+            this.revenueDisplay3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.revenueDisplay3.Location = new System.Drawing.Point(128, 229);
+            this.revenueDisplay3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.revenueDisplay3.Name = "revenueDisplay3";
+            this.revenueDisplay3.Size = new System.Drawing.Size(133, 28);
+            this.revenueDisplay3.TabIndex = 13;
+            this.revenueDisplay3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // calculateButton
             // 
             this.calculateButton.Location = new System.Drawing.Point(141, 365);
@@ -219,31 +219,31 @@
             this.exitButton.TabIndex = 4;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
-            // ticketsInput0
+            // numericUpDown1
             // 
-            this.ticketsInput0.Location = new System.Drawing.Point(149, 133);
-            this.ticketsInput0.Name = "ticketsInput0";
-            this.ticketsInput0.Size = new System.Drawing.Size(103, 22);
-            this.ticketsInput0.TabIndex = 6;
-            this.ticketsInput0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ticketsInput0.ValueChanged += new System.EventHandler(this.ticketsInput0_ValueChanged);
+            this.numericUpDown1.Location = new System.Drawing.Point(215, 133);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(114, 22);
+            this.numericUpDown1.TabIndex = 6;
+            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // ticketsInput1
+            // numericUpDown2
             // 
-            this.ticketsInput1.Location = new System.Drawing.Point(149, 179);
-            this.ticketsInput1.Name = "ticketsInput1";
-            this.ticketsInput1.Size = new System.Drawing.Size(103, 22);
-            this.ticketsInput1.TabIndex = 7;
-            this.ticketsInput1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown2.Location = new System.Drawing.Point(215, 179);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(114, 22);
+            this.numericUpDown2.TabIndex = 7;
+            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // ticketsInput2
+            // numericUpDown3
             // 
-            this.ticketsInput2.Location = new System.Drawing.Point(149, 224);
-            this.ticketsInput2.Name = "ticketsInput2";
-            this.ticketsInput2.Size = new System.Drawing.Size(103, 22);
-            this.ticketsInput2.TabIndex = 8;
-            this.ticketsInput2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown3.Location = new System.Drawing.Point(215, 224);
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(114, 22);
+            this.numericUpDown3.TabIndex = 8;
+            this.numericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // mainForm
             // 
@@ -262,9 +262,9 @@
             this.ticketsBox.PerformLayout();
             this.revenueBox.ResumeLayout(false);
             this.revenueBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ticketsInput0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ticketsInput1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ticketsInput2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -287,9 +287,9 @@
         private System.Windows.Forms.Button calculateButton;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Button exitButton;
-        private System.Windows.Forms.NumericUpDown ticketsInput2;
-        private System.Windows.Forms.NumericUpDown ticketsInput1;
-        private System.Windows.Forms.NumericUpDown ticketsInput0;
+        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
 
