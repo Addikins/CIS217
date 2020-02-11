@@ -68,6 +68,12 @@ namespace Stadium_Seating
             _classCRevenue = ticketsInput2.Value * _classCTicketCost;
             _totalRevenue = _classARevenue + _classBRevenue + _classCRevenue;
 
+            DisplayRevenue();
+
+        }
+
+        private void DisplayRevenue()
+        {
             revenueDisplay0.Text = "$" + (_classARevenue).ToString() + ".00";
             revenueDisplay1.Text = "$" + (_classBRevenue).ToString() + ".00";
             revenueDisplay2.Text = "$" + (_classCRevenue).ToString() + ".00";
@@ -75,13 +81,30 @@ namespace Stadium_Seating
 
             if (_totalRevenue > 0)
             {
-            revenueDisplay3.ForeColor = Color.Green;
+                revenueDisplay3.ForeColor = Color.Green;
+            }
+            else
+            {
+                revenueDisplay3.ForeColor = Color.Black;
             }
         }
 
         private void exitButton_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            _classARevenue = 0;
+            _classBRevenue = 0;
+            _classCRevenue = 0;
+            _totalRevenue = 0;
+
+            DisplayRevenue();
+            ticketsInput0.Value = 0;
+            ticketsInput1.Value = 0;
+            ticketsInput2.Value = 0;
         }
     }
 }

@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.ticketsBox = new System.Windows.Forms.GroupBox();
+            this.ticketsInput2 = new System.Windows.Forms.NumericUpDown();
+            this.ticketsInput1 = new System.Windows.Forms.NumericUpDown();
+            this.ticketsInput0 = new System.Windows.Forms.NumericUpDown();
             this.inputLabel2 = new System.Windows.Forms.Label();
             this.inputLable1 = new System.Windows.Forms.Label();
             this.inputLabel0 = new System.Windows.Forms.Label();
@@ -44,14 +47,11 @@
             this.calculateButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
-            this.ticketsInput0 = new System.Windows.Forms.NumericUpDown();
-            this.ticketsInput1 = new System.Windows.Forms.NumericUpDown();
-            this.ticketsInput2 = new System.Windows.Forms.NumericUpDown();
             this.ticketsBox.SuspendLayout();
-            this.revenueBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ticketsInput0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ticketsInput1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ticketsInput2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ticketsInput1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ticketsInput0)).BeginInit();
+            this.revenueBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // ticketsBox
@@ -68,6 +68,52 @@
             this.ticketsBox.TabIndex = 0;
             this.ticketsBox.TabStop = false;
             this.ticketsBox.Text = "Tickets Sold";
+            // 
+            // ticketsInput2
+            // 
+            this.ticketsInput2.DecimalPlaces = 2;
+            this.ticketsInput2.Location = new System.Drawing.Point(186, 180);
+            this.ticketsInput2.Maximum = new decimal(new int[] {
+            20000,
+            0,
+            0,
+            0});
+            this.ticketsInput2.Name = "ticketsInput2";
+            this.ticketsInput2.Size = new System.Drawing.Size(149, 22);
+            this.ticketsInput2.TabIndex = 8;
+            this.ticketsInput2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ticketsInput2.ThousandsSeparator = true;
+            // 
+            // ticketsInput1
+            // 
+            this.ticketsInput1.DecimalPlaces = 2;
+            this.ticketsInput1.Location = new System.Drawing.Point(186, 135);
+            this.ticketsInput1.Maximum = new decimal(new int[] {
+            20000,
+            0,
+            0,
+            0});
+            this.ticketsInput1.Name = "ticketsInput1";
+            this.ticketsInput1.Size = new System.Drawing.Size(149, 22);
+            this.ticketsInput1.TabIndex = 7;
+            this.ticketsInput1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ticketsInput1.ThousandsSeparator = true;
+            // 
+            // ticketsInput0
+            // 
+            this.ticketsInput0.DecimalPlaces = 2;
+            this.ticketsInput0.Location = new System.Drawing.Point(186, 89);
+            this.ticketsInput0.Maximum = new decimal(new int[] {
+            20000,
+            0,
+            0,
+            0});
+            this.ticketsInput0.Name = "ticketsInput0";
+            this.ticketsInput0.Size = new System.Drawing.Size(149, 22);
+            this.ticketsInput0.TabIndex = 6;
+            this.ticketsInput0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ticketsInput0.ThousandsSeparator = true;
+            this.ticketsInput0.ValueChanged += new System.EventHandler(this.ticketsInput0_ValueChanged);
             // 
             // inputLabel2
             // 
@@ -215,6 +261,7 @@
             this.clearButton.TabIndex = 3;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // exitButton
             // 
@@ -225,31 +272,6 @@
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
-            // 
-            // ticketsInput0
-            // 
-            this.ticketsInput0.Location = new System.Drawing.Point(186, 89);
-            this.ticketsInput0.Name = "ticketsInput0";
-            this.ticketsInput0.Size = new System.Drawing.Size(149, 22);
-            this.ticketsInput0.TabIndex = 6;
-            this.ticketsInput0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ticketsInput0.ValueChanged += new System.EventHandler(this.ticketsInput0_ValueChanged);
-            // 
-            // ticketsInput1
-            // 
-            this.ticketsInput1.Location = new System.Drawing.Point(186, 135);
-            this.ticketsInput1.Name = "ticketsInput1";
-            this.ticketsInput1.Size = new System.Drawing.Size(149, 22);
-            this.ticketsInput1.TabIndex = 7;
-            this.ticketsInput1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // ticketsInput2
-            // 
-            this.ticketsInput2.Location = new System.Drawing.Point(186, 180);
-            this.ticketsInput2.Name = "ticketsInput2";
-            this.ticketsInput2.Size = new System.Drawing.Size(149, 22);
-            this.ticketsInput2.TabIndex = 8;
-            this.ticketsInput2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // mainForm
             // 
@@ -266,11 +288,11 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ticketsBox.ResumeLayout(false);
             this.ticketsBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ticketsInput2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ticketsInput1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ticketsInput0)).EndInit();
             this.revenueBox.ResumeLayout(false);
             this.revenueBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ticketsInput0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ticketsInput1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ticketsInput2)).EndInit();
             this.ResumeLayout(false);
 
         }
