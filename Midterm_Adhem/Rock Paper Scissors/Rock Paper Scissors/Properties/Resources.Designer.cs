@@ -63,6 +63,26 @@ namespace Rock_Paper_Scissors.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap c6446620a09a23cd8acb37dbdd551b44_evil_mouth_clipart_600_276 {
+            get {
+                object obj = ResourceManager.GetObject("c6446620a09a23cd8acb37dbdd551b44_evil-mouth-clipart_600-276", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Enemy_Cat {
+            get {
+                object obj = ResourceManager.GetObject("Enemy Cat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kawaii_cats_white_cat_illustration {
             get {
                 object obj = ResourceManager.GetObject("kawaii-cats-white-cat-illustration", resourceCulture);
@@ -76,6 +96,26 @@ namespace Rock_Paper_Scissors.Properties {
         internal static System.Drawing.Bitmap Paper {
             get {
                 object obj = ResourceManager.GetObject("Paper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Paper_Enemy {
+            get {
+                object obj = ResourceManager.GetObject("Paper Enemy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Paper_Enemy1 {
+            get {
+                object obj = ResourceManager.GetObject("Paper Enemy1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,6 +143,26 @@ namespace Rock_Paper_Scissors.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Rock_Enemy {
+            get {
+                object obj = ResourceManager.GetObject("Rock Enemy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rock_Enemy1 {
+            get {
+                object obj = ResourceManager.GetObject("Rock Enemy1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Rock1 {
             get {
                 object obj = ResourceManager.GetObject("Rock1", resourceCulture);
@@ -116,6 +176,26 @@ namespace Rock_Paper_Scissors.Properties {
         internal static System.Drawing.Bitmap Scissors {
             get {
                 object obj = ResourceManager.GetObject("Scissors", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Scissors_Enemy {
+            get {
+                object obj = ResourceManager.GetObject("Scissors Enemy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Scissors_Enemy1 {
+            get {
+                object obj = ResourceManager.GetObject("Scissors Enemy1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -98,5 +98,29 @@
   <ItemGroup>
     <None Include="Resources\Player Cat.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy Cat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c6446620a09a23cd8acb37dbdd551b44_evil-mouth-clipart_600-276.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rock Enemy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paper Enemy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scissors Enemy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rock Enemy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paper Enemy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scissors Enemy1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
