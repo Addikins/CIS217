@@ -37,6 +37,10 @@
             this.button_Paper = new System.Windows.Forms.Button();
             this.button_Rock = new System.Windows.Forms.Button();
             this.throwButton = new System.Windows.Forms.Button();
+            this.resultLabel = new System.Windows.Forms.Label();
+            this.enemyScoreLabel = new System.Windows.Forms.Label();
+            this.playerScoreLabel = new System.Windows.Forms.Label();
+            this.resetButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.enemyPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -94,7 +98,6 @@
             this.enemyRock.TabIndex = 5;
             this.enemyRock.UseVisualStyleBackColor = false;
             this.enemyRock.Visible = false;
-            this.enemyRock.Click += new System.EventHandler(this.enemyRock_Click);
             // 
             // enemyPictureBox
             // 
@@ -175,12 +178,58 @@
             // 
             this.throwButton.BackColor = System.Drawing.Color.CornflowerBlue;
             this.throwButton.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.throwButton.Location = new System.Drawing.Point(346, 314);
+            this.throwButton.Location = new System.Drawing.Point(693, 284);
             this.throwButton.Name = "throwButton";
-            this.throwButton.Size = new System.Drawing.Size(200, 93);
+            this.throwButton.Size = new System.Drawing.Size(190, 93);
             this.throwButton.TabIndex = 8;
             this.throwButton.Text = "THROW!";
             this.throwButton.UseVisualStyleBackColor = false;
+            this.throwButton.Click += new System.EventHandler(this.throwButton_Click);
+            // 
+            // resultLabel
+            // 
+            this.resultLabel.Font = new System.Drawing.Font("MV Boli", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resultLabel.Location = new System.Drawing.Point(232, 286);
+            this.resultLabel.Name = "resultLabel";
+            this.resultLabel.Size = new System.Drawing.Size(431, 86);
+            this.resultLabel.TabIndex = 9;
+            this.resultLabel.Text = "You Win!";
+            this.resultLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.resultLabel.Visible = false;
+            // 
+            // enemyScoreLabel
+            // 
+            this.enemyScoreLabel.AutoSize = true;
+            this.enemyScoreLabel.Font = new System.Drawing.Font("MV Boli", 26.25F);
+            this.enemyScoreLabel.Location = new System.Drawing.Point(30, 244);
+            this.enemyScoreLabel.Name = "enemyScoreLabel";
+            this.enemyScoreLabel.Size = new System.Drawing.Size(149, 46);
+            this.enemyScoreLabel.TabIndex = 10;
+            this.enemyScoreLabel.Text = "Wins: 0";
+            this.enemyScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // playerScoreLabel
+            // 
+            this.playerScoreLabel.AutoSize = true;
+            this.playerScoreLabel.Font = new System.Drawing.Font("MV Boli", 26.25F);
+            this.playerScoreLabel.Location = new System.Drawing.Point(710, 393);
+            this.playerScoreLabel.Name = "playerScoreLabel";
+            this.playerScoreLabel.Size = new System.Drawing.Size(149, 46);
+            this.playerScoreLabel.TabIndex = 11;
+            this.playerScoreLabel.Text = "Wins: 0";
+            this.playerScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // resetButton
+            // 
+            this.resetButton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.resetButton.Font = new System.Drawing.Font("MV Boli", 18F);
+            this.resetButton.Location = new System.Drawing.Point(4, 617);
+            this.resetButton.Name = "resetButton";
+            this.resetButton.Size = new System.Drawing.Size(150, 59);
+            this.resetButton.TabIndex = 12;
+            this.resetButton.Text = "New Game";
+            this.resetButton.UseVisualStyleBackColor = false;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
             // RPS_Form
             // 
@@ -188,6 +237,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(895, 697);
+            this.Controls.Add(this.resetButton);
+            this.Controls.Add(this.playerScoreLabel);
+            this.Controls.Add(this.enemyScoreLabel);
             this.Controls.Add(this.throwButton);
             this.Controls.Add(this.enemyScissors);
             this.Controls.Add(this.enemyPaper);
@@ -197,6 +249,7 @@
             this.Controls.Add(this.button_Scissors);
             this.Controls.Add(this.button_Paper);
             this.Controls.Add(this.button_Rock);
+            this.Controls.Add(this.resultLabel);
             this.Font = new System.Drawing.Font("Jokerman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "RPS_Form";
@@ -205,6 +258,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.enemyPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerPictureBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -219,6 +273,10 @@
         private System.Windows.Forms.Button enemyPaper;
         private System.Windows.Forms.Button enemyRock;
         private System.Windows.Forms.Button throwButton;
+        private System.Windows.Forms.Label resultLabel;
+        private System.Windows.Forms.Label enemyScoreLabel;
+        private System.Windows.Forms.Label playerScoreLabel;
+        private System.Windows.Forms.Button resetButton;
     }
 }
 
