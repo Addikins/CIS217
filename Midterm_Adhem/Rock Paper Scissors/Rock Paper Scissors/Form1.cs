@@ -85,6 +85,7 @@ namespace Rock_Paper_Scissors
             //Disable label visibility while selecting a throw
             resultLabel.Visible = false;
 
+            ResetEnemySelections();
             ResetPlayerButtons();
 
             //Move the position of the current selection up to give the player visual feedback
@@ -93,13 +94,18 @@ namespace Rock_Paper_Scissors
 
         private void SetEnemySelection()
         {
+            ResetEnemySelections();
+            randomNumber = new Random();
+            enemySelection = randomNumber.Next(0, enemyOptions.Length);
+            enemyOptions[enemySelection].Visible = true;
+        }
+
+        private void ResetEnemySelections()
+        {
             foreach (Button enemyThrow in enemyOptions)
             {
                 enemyThrow.Visible = false;
             }
-            randomNumber = new Random();
-            enemySelection = randomNumber.Next(0, enemyOptions.Length);
-            enemyOptions[enemySelection].Visible = true;
         }
 
         private void DisplayResult()
@@ -107,6 +113,11 @@ namespace Rock_Paper_Scissors
             resultLabel.Text = "You " + GetResult() + "!";
             resultLabel.Visible = true;
 
+            DisplayScore();
+        }
+
+        private void DisplayScore()
+        {
             playerScoreLabel.Text = "Wins: " + playerScore;
             enemyScoreLabel.Text = "Wins: " + enemyScore;
         }
@@ -135,8 +146,10 @@ namespace Rock_Paper_Scissors
             playerScore = 0;
             enemyScore = 0;
 
-            DisplayResult();
+            DisplayScore();
             resultLabel.Visible = false;
+
+            ResetEnemySelections();
         }
 
         private void EnableThrowButton(bool isEnabled)
