@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+//Removed unused namespaces
 
 namespace Rock_Paper_Scissors
 {
@@ -95,6 +90,7 @@ namespace Rock_Paper_Scissors
         private void SetEnemySelection()
         {
             ResetEnemySelections();
+            //Finds a number between 0 and 2 (inclusive) as opposed to 1 and 3. This is simply to match with the array.
             randomNumber = new Random();
             enemySelection = randomNumber.Next(0, enemyOptions.Length);
             enemyOptions[enemySelection].Visible = true;
@@ -129,15 +125,16 @@ namespace Rock_Paper_Scissors
             else if (playerSelection > enemySelection && enemySelection != playerSelection - 2)
             {
                 playerScore += 1;
-                return "Won";
+                return "Win";
             }
             else
             {
                 enemyScore += 1;
-                return "Loss";
+                return "Lose";
             }
         }
 
+        //Resets all relevant elements to their default
         private void resetButton_Click(object sender, EventArgs e)
         {
             ResetPlayerButtons();

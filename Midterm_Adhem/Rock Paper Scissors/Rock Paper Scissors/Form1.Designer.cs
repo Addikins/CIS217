@@ -223,7 +223,7 @@
             // 
             this.resetButton.BackColor = System.Drawing.Color.CornflowerBlue;
             this.resetButton.Font = new System.Drawing.Font("MV Boli", 18F);
-            this.resetButton.Location = new System.Drawing.Point(4, 617);
+            this.resetButton.Location = new System.Drawing.Point(12, 626);
             this.resetButton.Name = "resetButton";
             this.resetButton.Size = new System.Drawing.Size(150, 59);
             this.resetButton.TabIndex = 12;
