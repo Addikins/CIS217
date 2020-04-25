@@ -64,9 +64,9 @@ namespace Personal_Information
         private void AddToResults()
         {
 
-            ListViewGroup householdMember people[currentPersonIndex].
+            ListViewGroup householdMember = new ListViewGroup(people[currentPersonIndex].fName + " " + people[currentPersonIndex].lName);
 
-            resultsList.Groups.Add()
+            resultsList.Groups.Add(householdMember);
                 resultsList.Items.Add(people[currentPersonIndex]);
         }
 

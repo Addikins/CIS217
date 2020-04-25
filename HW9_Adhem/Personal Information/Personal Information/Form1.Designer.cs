@@ -51,6 +51,8 @@
             this.invalidText = new System.Windows.Forms.Label();
             this.results = new System.Windows.Forms.GroupBox();
             this.resultsList = new System.Windows.Forms.ListView();
+            this.nameHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ageHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.ageInput)).BeginInit();
             this.currentPerson.SuspendLayout();
             this.memberResult.SuspendLayout();
@@ -307,13 +309,24 @@
             // 
             // resultsList
             // 
+            this.resultsList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.nameHeader,
+            this.ageHeader});
             this.resultsList.HideSelection = false;
-            this.resultsList.Location = new System.Drawing.Point(12, 193);
+            this.resultsList.Location = new System.Drawing.Point(15, 39);
             this.resultsList.Name = "resultsList";
-            this.resultsList.Size = new System.Drawing.Size(627, 205);
+            this.resultsList.Size = new System.Drawing.Size(612, 489);
             this.resultsList.TabIndex = 0;
             this.resultsList.UseCompatibleStateImageBehavior = false;
             this.resultsList.SelectedIndexChanged += new System.EventHandler(this.resultsList_SelectedIndexChanged);
+            // 
+            // nameHeader
+            // 
+            this.nameHeader.Text = "Name";
+            // 
+            // ageHeader
+            // 
+            this.ageHeader.Text = "Age";
             // 
             // personalInfoForm
             // 
@@ -369,6 +382,8 @@
         private System.Windows.Forms.Label ageResult;
         private System.Windows.Forms.Label addressResult;
         private System.Windows.Forms.ListView resultsList;
+        private System.Windows.Forms.ColumnHeader nameHeader;
+        private System.Windows.Forms.ColumnHeader ageHeader;
     }
 }
 
