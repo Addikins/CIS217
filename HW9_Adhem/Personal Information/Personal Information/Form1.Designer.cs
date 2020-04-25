@@ -34,30 +34,38 @@
             this.addressLabel = new System.Windows.Forms.Label();
             this.lNameLabel = new System.Windows.Forms.Label();
             this.lNameText = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.addressInput = new System.Windows.Forms.TextBox();
             this.ageLabel = new System.Windows.Forms.Label();
             this.ageInput = new System.Windows.Forms.NumericUpDown();
             this.phoneLabel = new System.Windows.Forms.Label();
             this.phoneText = new System.Windows.Forms.TextBox();
             this.currentPerson = new System.Windows.Forms.GroupBox();
+            this.memberResult = new System.Windows.Forms.GroupBox();
+            this.phoneResult = new System.Windows.Forms.Label();
+            this.ageResult = new System.Windows.Forms.Label();
+            this.addressResult = new System.Windows.Forms.Label();
             this.submitInfoButton = new System.Windows.Forms.Button();
             this.membersLabel = new System.Windows.Forms.Label();
             this.membersInput = new System.Windows.Forms.NumericUpDown();
             this.membersSubmitButton = new System.Windows.Forms.Button();
+            this.invalidText = new System.Windows.Forms.Label();
+            this.results = new System.Windows.Forms.GroupBox();
+            this.resultsList = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.ageInput)).BeginInit();
             this.currentPerson.SuspendLayout();
+            this.memberResult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.membersInput)).BeginInit();
+            this.results.SuspendLayout();
             this.SuspendLayout();
             // 
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
-            this.titleLabel.Location = new System.Drawing.Point(136, 52);
+            this.titleLabel.Location = new System.Drawing.Point(87, 51);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(379, 23);
+            this.titleLabel.Size = new System.Drawing.Size(455, 23);
             this.titleLabel.TabIndex = 0;
-            this.titleLabel.Text = "Enter details for each household member below";
-            this.titleLabel.Click += new System.EventHandler(this.label1_Click);
+            this.titleLabel.Text = "Enter your information and each household member below";
             // 
             // fNameText
             // 
@@ -75,7 +83,6 @@
             this.fNameLabel.Size = new System.Drawing.Size(98, 23);
             this.fNameLabel.TabIndex = 3;
             this.fNameLabel.Text = "First Name";
-            this.fNameLabel.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // addressLabel
             // 
@@ -104,13 +111,13 @@
             this.lNameText.Size = new System.Drawing.Size(132, 30);
             this.lNameText.TabIndex = 6;
             // 
-            // textBox1
+            // addressInput
             // 
-            this.textBox1.Location = new System.Drawing.Point(173, 205);
-            this.textBox1.MaxLength = 30;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(394, 30);
-            this.textBox1.TabIndex = 7;
+            this.addressInput.Location = new System.Drawing.Point(173, 205);
+            this.addressInput.MaxLength = 30;
+            this.addressInput.Name = "addressInput";
+            this.addressInput.Size = new System.Drawing.Size(394, 30);
+            this.addressInput.TabIndex = 9;
             // 
             // ageLabel
             // 
@@ -131,7 +138,7 @@
             0});
             this.ageInput.Name = "ageInput";
             this.ageInput.Size = new System.Drawing.Size(47, 30);
-            this.ageInput.TabIndex = 10;
+            this.ageInput.TabIndex = 7;
             this.ageInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.ageInput.Value = new decimal(new int[] {
             1,
@@ -147,7 +154,6 @@
             this.phoneLabel.Size = new System.Drawing.Size(120, 23);
             this.phoneLabel.TabIndex = 12;
             this.phoneLabel.Text = "Phone Number";
-            this.phoneLabel.Click += new System.EventHandler(this.label1_Click_2);
             // 
             // phoneText
             // 
@@ -155,11 +161,11 @@
             this.phoneText.MaxLength = 12;
             this.phoneText.Name = "phoneText";
             this.phoneText.Size = new System.Drawing.Size(132, 30);
-            this.phoneText.TabIndex = 11;
-            this.phoneText.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.phoneText.TabIndex = 8;
             // 
             // currentPerson
             // 
+            this.currentPerson.Controls.Add(this.memberResult);
             this.currentPerson.Controls.Add(this.submitInfoButton);
             this.currentPerson.Controls.Add(this.phoneLabel);
             this.currentPerson.Controls.Add(this.fNameLabel);
@@ -168,7 +174,7 @@
             this.currentPerson.Controls.Add(this.fNameText);
             this.currentPerson.Controls.Add(this.ageLabel);
             this.currentPerson.Controls.Add(this.addressLabel);
-            this.currentPerson.Controls.Add(this.textBox1);
+            this.currentPerson.Controls.Add(this.addressInput);
             this.currentPerson.Controls.Add(this.lNameLabel);
             this.currentPerson.Controls.Add(this.lNameText);
             this.currentPerson.Location = new System.Drawing.Point(12, 224);
@@ -176,9 +182,48 @@
             this.currentPerson.Size = new System.Drawing.Size(645, 322);
             this.currentPerson.TabIndex = 13;
             this.currentPerson.TabStop = false;
-            this.currentPerson.Text = "Household Member 1";
+            this.currentPerson.Text = "Your Information";
             this.currentPerson.Visible = false;
-            this.currentPerson.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // memberResult
+            // 
+            this.memberResult.Controls.Add(this.phoneResult);
+            this.memberResult.Controls.Add(this.ageResult);
+            this.memberResult.Controls.Add(this.addressResult);
+            this.memberResult.Location = new System.Drawing.Point(371, 120);
+            this.memberResult.Name = "memberResult";
+            this.memberResult.Size = new System.Drawing.Size(274, 219);
+            this.memberResult.TabIndex = 14;
+            this.memberResult.TabStop = false;
+            this.memberResult.Text = "FirstName LastName";
+            this.memberResult.Visible = false;
+            // 
+            // phoneResult
+            // 
+            this.phoneResult.AutoSize = true;
+            this.phoneResult.Location = new System.Drawing.Point(6, 99);
+            this.phoneResult.Name = "phoneResult";
+            this.phoneResult.Size = new System.Drawing.Size(127, 23);
+            this.phoneResult.TabIndex = 12;
+            this.phoneResult.Text = "Phone Number:";
+            // 
+            // ageResult
+            // 
+            this.ageResult.AutoSize = true;
+            this.ageResult.Location = new System.Drawing.Point(77, 43);
+            this.ageResult.Name = "ageResult";
+            this.ageResult.Size = new System.Drawing.Size(110, 23);
+            this.ageResult.TabIndex = 9;
+            this.ageResult.Text = "** Years Old";
+            // 
+            // addressResult
+            // 
+            this.addressResult.AutoSize = true;
+            this.addressResult.Location = new System.Drawing.Point(6, 160);
+            this.addressResult.Name = "addressResult";
+            this.addressResult.Size = new System.Drawing.Size(80, 23);
+            this.addressResult.TabIndex = 4;
+            this.addressResult.Text = "Address:";
             // 
             // submitInfoButton
             // 
@@ -238,25 +283,62 @@
             this.membersSubmitButton.UseVisualStyleBackColor = false;
             this.membersSubmitButton.Click += new System.EventHandler(this.membersSubmitButton_Click);
             // 
+            // invalidText
+            // 
+            this.invalidText.AutoSize = true;
+            this.invalidText.ForeColor = System.Drawing.Color.Red;
+            this.invalidText.Location = new System.Drawing.Point(68, 540);
+            this.invalidText.Name = "invalidText";
+            this.invalidText.Size = new System.Drawing.Size(528, 23);
+            this.invalidText.TabIndex = 16;
+            this.invalidText.Text = "Invalid Submission. Please enter all information before submitting.";
+            this.invalidText.Visible = false;
+            // 
+            // results
+            // 
+            this.results.Controls.Add(this.resultsList);
+            this.results.Location = new System.Drawing.Point(12, 12);
+            this.results.Name = "results";
+            this.results.Size = new System.Drawing.Size(645, 551);
+            this.results.TabIndex = 17;
+            this.results.TabStop = false;
+            this.results.Visible = false;
+            this.results.Enter += new System.EventHandler(this.results_Enter);
+            // 
+            // resultsList
+            // 
+            this.resultsList.HideSelection = false;
+            this.resultsList.Location = new System.Drawing.Point(12, 193);
+            this.resultsList.Name = "resultsList";
+            this.resultsList.Size = new System.Drawing.Size(627, 205);
+            this.resultsList.TabIndex = 0;
+            this.resultsList.UseCompatibleStateImageBehavior = false;
+            this.resultsList.SelectedIndexChanged += new System.EventHandler(this.resultsList_SelectedIndexChanged);
+            // 
             // personalInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(669, 572);
+            this.Controls.Add(this.results);
             this.Controls.Add(this.membersSubmitButton);
             this.Controls.Add(this.membersInput);
             this.Controls.Add(this.membersLabel);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.currentPerson);
+            this.Controls.Add(this.invalidText);
             this.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "personalInfoForm";
             this.Text = "Input Personal Info";
             this.Load += new System.EventHandler(this.personalInfoForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ageInput)).EndInit();
             this.currentPerson.ResumeLayout(false);
             this.currentPerson.PerformLayout();
+            this.memberResult.ResumeLayout(false);
+            this.memberResult.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.membersInput)).EndInit();
+            this.results.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,7 +352,7 @@
         private System.Windows.Forms.Label addressLabel;
         private System.Windows.Forms.Label lNameLabel;
         private System.Windows.Forms.TextBox lNameText;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox addressInput;
         private System.Windows.Forms.Label ageLabel;
         private System.Windows.Forms.NumericUpDown ageInput;
         private System.Windows.Forms.Label phoneLabel;
@@ -280,6 +362,13 @@
         private System.Windows.Forms.Label membersLabel;
         private System.Windows.Forms.NumericUpDown membersInput;
         private System.Windows.Forms.Button membersSubmitButton;
+        private System.Windows.Forms.Label invalidText;
+        private System.Windows.Forms.GroupBox results;
+        private System.Windows.Forms.GroupBox memberResult;
+        private System.Windows.Forms.Label phoneResult;
+        private System.Windows.Forms.Label ageResult;
+        private System.Windows.Forms.Label addressResult;
+        private System.Windows.Forms.ListView resultsList;
     }
 }
 
