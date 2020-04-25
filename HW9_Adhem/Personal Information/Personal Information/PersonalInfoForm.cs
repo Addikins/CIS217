@@ -17,6 +17,7 @@ namespace Personal_Information
 
         Dictionary<int, Person> people = new Dictionary<int, Person>();
 
+
         public personalInfoForm()
         {
             InitializeComponent();
@@ -24,15 +25,13 @@ namespace Personal_Information
 
         private void personalInfoForm_Load(object sender, EventArgs e)
         {
-
+            AcceptButton = submitInfoButton;
+            resultsList.View = View.Details;
+            resultsList.GridLines = true;
+            resultsList.FullRowSelect = true;
         }
 
-        private void lNameLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void submitButton_Click(object sender, EventArgs e)
+        private void submitInfoButton_Click(object sender, EventArgs e)
         {
             if (fNameText.Text == "" || lNameText.Text == "" || phoneText.Text == "" || addressInput.Text == "")
             {
@@ -45,7 +44,7 @@ namespace Personal_Information
                 people[currentPersonIndex].SetPersonInfo(fNameText.Text, lNameText.Text, decimal.ToInt32(ageInput.Value),
                     phoneText.Text, addressInput.Text);
 
-                AddToResults();
+                AddToResults(currentPersonIndex);
 
                 if (currentPersonIndex < people.Count - 1)
                 {
@@ -56,18 +55,22 @@ namespace Personal_Information
                 else
                 {
                     currentPerson.Visible = false;
+                    titleLabel.Visible = false;
                     results.Visible = true;
                 }
             }
         }
 
-        private void AddToResults()
+        private void AddToResults(int index)
         {
+            string[] information = new string[4];
+            information[0] = people[index].fName + " " + people[index].lName;
+            information[1] = people[index].age.ToString();
+            information[2] = people[index].phoneNumber;
+            information[3] = people[index].address;
 
-            ListViewGroup householdMember = new ListViewGroup(people[currentPersonIndex].fName + " " + people[currentPersonIndex].lName);
-
-            resultsList.Groups.Add(householdMember);
-                resultsList.Items.Add(people[currentPersonIndex]);
+            ListViewItem item = new ListViewItem(information);
+            resultsList.Items.Add(item);
         }
 
         private void ResetForm()
@@ -94,16 +97,6 @@ namespace Personal_Information
             membersLabel.Visible = false;
             membersInput.Visible = false;
             membersSubmitButton.Visible = false;
-        }
-
-        private void resultsList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void results_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 
