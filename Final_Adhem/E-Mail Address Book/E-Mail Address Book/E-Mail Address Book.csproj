@@ -46,16 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="nameSelectionForm.cs">
+    <Compile Include="NameSelectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="nameSelectionForm.Designer.cs">
-      <DependentUpon>nameSelectionForm.cs</DependentUpon>
+    <Compile Include="NameSelectionForm.Designer.cs">
+      <DependentUpon>NameSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonDisplayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonDisplayForm.Designer.cs">
+      <DependentUpon>PersonDisplayForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="nameSelectionForm.resx">
-      <DependentUpon>nameSelectionForm.cs</DependentUpon>
+    <EmbeddedResource Include="NameSelectionForm.resx">
+      <DependentUpon>NameSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonDisplayForm.resx">
+      <DependentUpon>PersonDisplayForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

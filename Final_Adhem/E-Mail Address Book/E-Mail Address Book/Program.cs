@@ -16,7 +16,7 @@ namespace E_Mail_Address_Book
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new nameSelectionForm());
+            Application.Run(new NameSelectionForm());
         }
     }
 }
